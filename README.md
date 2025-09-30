@@ -13,6 +13,8 @@ My website will include all sorts of tags such as:
 - wording and styling
 - having a data set with certain values
 - basic html tags
+## Website URL:
+https://aman-thorat.github.io/lab4-web-foundations-html/
 ## License
 This project is licensed under the MIT License - see [LICENSE.md](LICENSE.md) for
 details.
