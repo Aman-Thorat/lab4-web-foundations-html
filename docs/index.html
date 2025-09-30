@@ -3,15 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Usually would put this to link css file together -->
-    <link href="style.css" rel="stylesheet"/>
     <title>Exploring HTML Elements</title>
+    <style>
+        h1 {
+            color: blue;
+        }
+    </style>
 </head>
-<style>
-    h1{
-        color: blue;
-    }
-</style>
 <body>
     <h1>Hello HTML World</h1>
     <p id="date-time">Displaying Date and Time</p>
@@ -26,22 +24,19 @@
     <hr>
     <p title="Did you mouse me?">Soon you will &hearts; HTML as much as I do!</p>
 
-
     <p>Another          paragraph here</p>
     <p>And another!</p>
     <p>I    r      e    a   l  l y like WHITESPACE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;don't you?</p>
     <pre>
-        What
-               about now?
-    </pre>
-    <!-- Marquee is not a valid tag for not all websites so best not to put it and make it p -->
+            What
+                   about now?
+        </pre>
+
     <p>This is fun isn't it?</p>
     <p>day ever!</p>
     <yes-sir>It complete is a <b>great</b> day for writing trashy HTML!</yes-sir>
 
-    <input
-            type="color"
-    />
+    <input type="color">
 
     <p style="color: #8585ff">
         The <b>style</b> is so cool
@@ -49,26 +44,26 @@
 
     <h2>&downarrow; Message me here &downarrow;</h2>
     <address>
-        <a href="mailto:amanthorat3@gmail.com">amanthorat3@gmail.com</a><br />
+        <a href="mailto:amanthorat3@gmail.com">amanthorat3@gmail.com</a><br>
         <a href="tel:+15307558306">+1 (530) 755-8306</a>
     </address>
 
     <article class="Grades">
         <header>
-            <h1>Grades</h1>
+            <h2>Grades</h2>
             <time>2025</time>
         </header>
-        <h2>Grade in Class 1</h2>
+        <h3>Grade in Class 1</h3>
         <article class="class1-grade">
-            <h2>99.57%</h2>
+            <h4>99.57%</h4>
             <p>A+</p>
         </article>
         <article class="class2-grade">
-            <h2>87.99%</h2>
+            <h4>87.99%</h4>
             <p>B+</p>
         </article>
         <article class="class3-grade">
-            <h2>20%</h2>
+            <h4>20%</h4>
             <p>F</p>
         </article>
         <footer>
@@ -76,27 +71,21 @@
         </footer>
     </article>
 
-    <h1>Header 1</h1>
     <h2>Header 2</h2>
     <h3>Header 3</h3>
     <h4>Header 4</h4>
     <h5>Header 5</h5>
     <h6>Header 6</h6>
     <hgroup>
-        <h1>Big Header</h1>
+        <h2>Big Header</h2>
         <p>Paragraph it groups together with this header. Can be any header</p>
     </hgroup>
 
     <main>
-        <p>
-            This main function basically groups two paragraphs together
-        </p>
-
-        <p>
-            Second paragraph that is grouped together
-        </p>
+        <p>This main function basically groups two paragraphs together</p>
+        <p>Second paragraph that is grouped together</p>
     </main>
-    <!-- This below is just an example of a nav class straight from the website-->
+
     <nav class="crumbs">
         <ol>
             <li class="crumb"><a href="#">Bikes</a></li>
@@ -105,34 +94,28 @@
         </ol>
     </nav>
 
-    <h1>Jump Bike 3000</h1>
+    <h2>Jump Bike 3000</h2>
     <p>
         This BMX bike is a solid step into the pro world. It looks as legit as it
         rides and is built to polish your skills.
     </p>
 
     <section>
-        <h2>Section tag 1</h2>
-        <p>
-            Paragraph inside section
-        </p>
+        <h3>Section tag 1</h3>
+        <p>Paragraph inside section</p>
     </section>
 
     <section>
-        <h2>Section tag 2</h2>
-        <p>
-            paragraph inside section
-        </p>
+        <h3>Section tag 2</h3>
+        <p>paragraph inside section</p>
     </section>
 
-    <!-- This below is just an example of a header with a search class straight from the website and gives
-    example of a search button say for a website where you search for movies-->
     <header>
-        <h1>Movie website</h1>
+        <h2>Movie website</h2>
         <search>
-            <form action="./search/">
+            <form action="#" method="get">
                 <label for="movie">Find a Movie</label>
-                <input type="search" id="movie" name="q" />
+                <input type="search" id="movie" name="q">
                 <button type="submit">Search</button>
             </form>
         </search>
@@ -140,9 +123,7 @@
 
     <div>
         <blockquote cite="https://tesla.com">
-            <p>
-                "I would love to put a chip in the brain"
-            </p>
+            <p>"I would love to put a chip in the brain"</p>
         </blockquote>
         <p>—Elon Musk, <cite>Aman's Fake Newspaper</cite></p>
     </div>
@@ -150,23 +131,19 @@
     <dl>
         <dt>First dt tag</dt>
         <dd>dd tag to describe it</dd>
-
         <dt>Second dt tag</dt>
         <dd>dd tag to describe it</dd>
     </dl>
+
     <div>
-        <img
-                src="/images/validation-fail.jpg" width="600" height="300"
-                alt="My failing tests" />
+        <img src="/media/validation-fail.jpg" width="600" height="300" alt="My failing tests">
         <p>My failing tests</p>
     </div>
 
-    <hr />
+    <hr>
 
     <figure>
-        <img
-                src="/images/validation-pass.jpg" width="800" height="200"
-                alt="My passing tests" />
+        <img src="/media/validation-pass.jpg" width="800" height="200" alt="My passing tests">
         <figcaption>My passing test in a caption</figcaption>
     </figure>
 
@@ -177,38 +154,103 @@
     </ul>
 
     <menu>
-        <button>Press me</button>
+        <li><button>Press me</button></li>
     </menu>
 
     <ol>
-        <li>Ordered List Item #1</li>
-        <li>Ordered List Item #2</li>
-        <li>Ordered List Item #3</li>
+        <li><strong>Ordered List Item #1</strong></li>
+        <li>H<sub>2</sub>O</li>
+        <li>a<sup>2</sup> + b<sup>2</sup></li>
+        <li>I made a <u>speling</u> mistake</li>
         <li><a href="https://google.com">List Item that is a link</a></li>
     </ol>
 
+    <div>
+        <p>Listen to me hack into your computer</p>
+        <audio controls src="/media/random-beep-76811.mp3"></audio>
+    </div>
+
+    <p>
+        The infinite sum
+        <math display="block">
+            <mrow>
+                <munderover>
+                    <mo>∑</mo>
+                    <mrow>
+                        <mi>n</mi>
+                        <mo>=</mo>
+                        <mn>1</mn>
+                    </mrow>
+                    <mrow>
+                        <mo>+</mo>
+                        <mn>∞</mn>
+                    </mrow>
+                </munderover>
+                <mfrac>
+                    <mn>1</mn>
+                    <msup>
+                        <mi>n</mi>
+                        <mn>2</mn>
+                    </msup>
+                </mfrac>
+            </mrow>
+        </math>
+        is equal to the real number
+        <math display="inline">
+            <mfrac>
+                <msup>
+                    <mi>π</mi>
+                    <mn>2</mn>
+                </msup>
+                <mn>6</mn>
+            </mfrac>
+        </math>.
+    </p>
+
+    <blockquote>
+        There is <del>nothing</del> <ins>no code</ins> either good or bad, but
+        <del>thinking</del> <ins>running it</ins> makes it so.
+    </blockquote>
+
+    <form action="#" method="get" class="form-example">
+        <div class="form-example">
+            <label for="name">Full name: </label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div class="form-example">
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="form-example">
+            <input type="submit" value="Send!">
+        </div>
+    </form>
+
+    <details>
+        <summary>Sun</summary>
+        The yellow star above us in the solar system
+    </details>
+
     <pre>
-             T
-             A
-             K
-             E
-             S
-            TEXT
-             AS
-        It IS      LISTED
-    </pre>
+                 T
+                 A
+                 K
+                 E
+                 S
+                TEXT
+                 AS
+            It IS      LISTED
+        </pre>
 
     <p><abbr title="World Wide Web">WWW</abbr> is an <b>abbreviation</b></p>
 
     <p>This is to show the code block <code>console.log()</code></p>
 
     <ul>
-        <li><data id="001">Version 1</data></li>
-        <li><data id="002">Version 2</data></li>
-        <li><data id="003">Version 3</data></li>
+        <li><data value="1" id="001">Version 1</data></li>
+        <li><data value="2" id="002">Version 2</data></li>
+        <li><data value="3" id="003">Version 3</data></li>
     </ul>
-
-    <!-- This below is just an example of a dfn tag straight from the website-->
 
     <p>
         A <dfn id="def-validator">validator</dfn> is a program that checks for syntax
@@ -219,13 +261,9 @@
 
     <p>
         When I asked Elon he said
-        <q
-                cite="https://www.tesla.com">
-            I would love to put a chip in the brain
-        </q>
+        <q cite="https://www.tesla.com">I would love to put a chip in the brain</q>
     </p>
 
-    <!-- Straight from website example-->
     <ruby>
         漢 <rp>(</rp><rt>kan</rt><rp>)</rp> 字 <rp>(</rp><rt>ji</rt><rp>)</rp>
     </ruby>
@@ -233,19 +271,14 @@
     <p><s>This is going to be striked out</s></p>
 
     <p>
-        <samp>This is a samp tag<br />Keep scrolling</samp>
-    <small>This a small text to maybe describe something</small>
+        <samp>This is a samp tag<br>Keep scrolling</samp>
+        <small>This a small text to maybe describe something</small>
     </p>
 
-    <hr />
+    <hr>
 
     <my-school>
-        <p>
-            My school is USD
-        </p>
+        <p>My school is USD</p>
     </my-school>
-
-
-
 </body>
 </html>
